@@ -6,4 +6,4 @@ AA农场是本地优先的 macOS 应用：项目、任务、证据和运行记�
 
 提交 GitHub Issue 前请移除 API Key、私有代码、个人路径和其他敏感信息。
 
-完整隐私政策随官网发布；正式域名启用后，本页会补充官网链接和联系信息。
+请阅读官网的 [完整隐私政策](https://aa-farm.pages.dev/privacy)；获取帮助请前往 [支持页](https://aa-farm.pages.dev/support)。

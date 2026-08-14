@@ -10,6 +10,7 @@ body:
     id: version
     attributes:
       label: AA农场版本
+      description: 如果应用打不开或找不到版本号，可以填写“不清楚”。
       placeholder: 例如 0.1.0
     validations:
       required: true
@@ -17,21 +18,22 @@ body:
     id: chip
     attributes:
       label: Mac 芯片
-      options: [Apple Silicon, Intel]
+      options: [Apple Silicon, Intel, 不清楚]
     validations:
       required: true
   - type: input
     id: macos
     attributes:
       label: macOS 版本
+      description: 可在苹果菜单 → 关于本机中查看；找不到时可填“不清楚”。
       placeholder: 例如 macOS 15.6
     validations:
       required: true
   - type: dropdown
     id: runner
     attributes:
-      label: 农夫 / 运行器
-      options: [Codex CLI, Ollama, 其他 OpenAI-compatible, 尚未运行任务]
+      label: 使用的 AI 农夫
+      options: [Codex（ChatGPT 登录）, Ollama（本地模型）, 其他兼容模型, 尚未运行任务, 不清楚]
     validations:
       required: true
   - type: textarea

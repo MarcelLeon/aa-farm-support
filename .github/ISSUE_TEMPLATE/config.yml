@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 使用文档
-    url: https://github.com/MarcelLeon/aa-farm-support#readme
-    about: 播种、运行器、证据与收成的完整说明
+  - name: 使用与常见问题
+    url: https://aa-farm.pages.dev/support
+    about: 先查看下载、运行器、证据与收成的说明
   - name: 安全问题（不要公开提交）
     url: https://github.com/MarcelLeon/aa-farm-support/security/advisories/new
     about: 私密报告可能影响用户安全的问题
