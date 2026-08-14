@@ -1,0 +1,22 @@
+name: 体验建议
+description: 告诉我们哪段种植或收成动线不够顺手
+title: "[体验] "
+labels: [experience]
+body:
+  - type: dropdown
+    id: scene
+    attributes:
+      label: 发生在哪一步
+      options: [选择项目, 选择种子, 播种设置, 生长过程, 验收证据, 收菜合入, 运行器设置, 官网与下载, 其他]
+    validations:
+      required: true
+  - type: textarea
+    id: struggle
+    attributes:
+      label: 你原本想完成什么？哪里卡住了？
+    validations:
+      required: true
+  - type: textarea
+    id: ideal
+    attributes:
+      label: 你希望它怎样表现？
