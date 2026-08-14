@@ -1,0 +1,61 @@
+name: 问题报告
+description: 报告可以复现的 AA农场问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "请勿上传私有代码、API Key、个人路径或其他敏感信息。"
+  - type: input
+    id: version
+    attributes:
+      label: AA农场版本
+      placeholder: 例如 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: chip
+    attributes:
+      label: Mac 芯片
+      options: [Apple Silicon, Intel]
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS 版本
+      placeholder: 例如 macOS 15.6
+    validations:
+      required: true
+  - type: dropdown
+    id: runner
+    attributes:
+      label: 农夫 / 运行器
+      options: [Codex CLI, Ollama, 其他 OpenAI-compatible, 尚未运行任务]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从打开应用开始，按顺序写出操作。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待结果与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 已脱敏的截图或日志
+      description: 可选。上传前请遮住仓库名、用户名、代码和凭证。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我确认没有提交私有代码、API Key 或其他敏感数据。
+          required: true
