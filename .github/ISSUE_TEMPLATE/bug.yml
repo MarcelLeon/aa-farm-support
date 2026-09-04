@@ -11,7 +11,7 @@ body:
     attributes:
       label: AA农场版本
       description: 如果应用打不开或找不到版本号，可以填写“不清楚”。
-      placeholder: 例如 0.1.0
+      placeholder: 例如 0.1.1
     validations:
       required: true
   - type: dropdown

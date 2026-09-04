@@ -25,6 +25,7 @@ AA农场把日常工作变成六种任务种子，让本机的 AI Agent 在隔�
 ## 获取帮助
 
 - [报告可以复现的问题](https://github.com/MarcelLeon/aa-farm-support/issues/new/choose)
+- [提交第一次收成反馈](https://github.com/MarcelLeon/aa-farm-support/issues/new?template=first-harvest.yml)
 - [查看已知问题](https://github.com/MarcelLeon/aa-farm-support/issues)
 - [阅读使用与常见问题](https://aa-farm.pages.dev/support)
 - [阅读隐私说明](https://aa-farm.pages.dev/privacy)

@@ -1,0 +1,44 @@
+name: 首次收成反馈
+description: 告诉我们第一颗任务有没有长成，以及哪一步最需要改进
+title: "[首收成] "
+labels: [experience]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢你真的种了一颗任务。请只描述流程体验；不要上传私有代码、项目路径、Prompt、API Key 或未脱敏截图。
+  - type: dropdown
+    id: seed
+    attributes:
+      label: 你种了哪一类任务？
+      options: [Bug 修复, 测试补全, 实现小功能, 整理文档, 修复构建, 审查建议, 自定义种子]
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: 最后收到了什么？
+      options: [看到了真实产出并成功收获, 看到了产出但没有收获, 任务失败但原因看得懂, 任务失败且不知道下一步, 没有成功开始任务]
+    validations:
+      required: true
+  - type: textarea
+    id: visible-result
+    attributes:
+      label: 哪个结果或证据最有帮助？
+      description: 例如页面截图、生成的文档、测试结果或代码差异；请勿粘贴私有内容。
+  - type: textarea
+    id: friction
+    attributes:
+      label: 哪一步最不顺手？
+      description: 请用自己的话描述，不需要知道 Git、worktree 或 Glob 等术语。
+  - type: textarea
+    id: next-seed
+    attributes:
+      label: 你希望下一颗自定义种子是什么？
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我确认没有提交私有代码、项目路径、Prompt、API Key 或未脱敏截图。
+          required: true
